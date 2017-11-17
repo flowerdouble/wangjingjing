@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.v4.view.ViewPager
+    android:id="@+id/VP"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/RG">
+</android.support.v4.view.ViewPager>
+    <RadioGroup
+        android:id="@+id/RG"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/home_btn1"
+            style="@style/Button"
+            android:drawableTop="@mipmap/ic_nav_home_press"
+            android:text="@string/shouye"
+            android:textColor="@color/main"
+            />
+        <RadioButton
+            android:id="@+id/home_btn2"
+            style="@style/Button"
+            android:drawableTop="@mipmap/ic_nav_class"
+            android:text="@string/fenlei"
+            />
+        <RadioButton
+            android:id="@+id/home_btn3"
+            style="@style/Button"
+            android:drawableTop="@mipmap/ic_nav_cart"
+            android:text="@string/gouwuche"
+            />
+        <RadioButton
+            android:id="@+id/home_btn4"
+            style="@style/Button"
+            android:drawableTop="@mipmap/ic_nav_user"
+            android:text="@string/wode"
+            />
+    </RadioGroup>
+</RelativeLayout>
